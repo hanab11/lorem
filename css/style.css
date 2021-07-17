@@ -74,6 +74,9 @@ a:visited{
     border-radius: 25px;
     padding: 20px;
     margin: 20px 0;
+    position: relative;
+    top: 20px;
+    left: 25px;
 }
 
 .list li{
@@ -121,6 +124,7 @@ a:visited{
     color: springgreen;
 }
 
+/* margin-left和left auto效果不同 设value效果类似 */
 .position-box{
     margin-left: auto;
     width: 500px;
