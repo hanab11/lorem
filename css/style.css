@@ -1,0 +1,145 @@
+body{
+    background-color: #F4F4F4;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /* 等同 */
+    font: normal 16px Arial, Helvetica, sans-serif;
+
+    line-height: 1.5em;
+}
+
+button{
+    background-color: tomato;
+    color: teal;
+    padding: 10px 15px;
+}
+button:hover{
+    background-color: yellow;
+    
+}
+button:active{
+    background-color: snow;
+}
+
+a{
+    color: grey;
+}
+a:hover{
+    background-color: yellow;
+}
+a:visited{
+    background-color: red;
+}
+
+.containner{
+    width: 60%;
+    margin: auto;
+}
+
+.box1{
+    background-color: blanchedalmond;
+    color: cornflowerblue;
+
+    border: 5px blue solid;
+    border-top: 10px green dotted;
+    border-right: 8px red solid;
+    border-bottom: 1px firebrick double;
+    border-left: 10px blueviolet double;
+    /* 可单独精细化调整 */
+    border-bottom-width: 5px;
+    border-bottom-style: dashed;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: 20px;
+}
+
+.box1 h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    word-spacing: 2em;
+}
+
+#box2{
+    border: 5px dotted violet;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.list li{
+    list-style-image: url(../img/yes.png);
+}
+
+/* 清除浮动 */
+.clearfloat{
+    clear: both;
+}
+
+.block{
+    float: left;
+    width: 33.33%;
+    border: 2px cadetblue dotted;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    border: 2px cadetblue dotted;
+    box-sizing: border-box;
+}
+#sidebar{
+    float: left;
+    width: 30%;
+    border: 2px cadetblue dotted;
+    box-sizing: border-box;
+}
+
+.list2 li{
+    list-style-image: url(../img/yes.png);
+}
+.list2 li:nth-child(odd){
+    background-color: chartreuse;
+}
+.list2 li:nth-child(even){
+    background-color: crimson;
+}
+.list2 li:first-child{
+    color: firebrick;
+}
+.list2 li:nth-child(6){
+    color: springgreen;
+}
+
+.position-box{
+    margin-left: auto;
+    width: 500px;
+    height: 500px;
+    border: 2px grey dotted;
+    position: relative;
+}
+.position-box h1{
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+.position-box h2{
+    position: absolute;
+    right: 50px;
+}
+
+#fixed{
+    position: fixed;
+    right: 0;
+    bottom: 300px;
+}
