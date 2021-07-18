@@ -67,6 +67,9 @@ a:visited{
     text-transform: uppercase;
     letter-spacing: 0.5em;
     word-spacing: 2em;
+
+    /* 居中 */
+    text-align: center;
 }
 
 #box2{
@@ -147,3 +150,40 @@ a:visited{
     right: 0;
     bottom: 300px;
 }
+
+
+/* 后盾人-搜索框示例 */
+.sousuo {
+    border: solid 1px #ddd;
+    width: 150px;
+}
+.sousuo>input[type="text"] {
+    border: none;
+    outline: none;
+}
+.sousuo>input[type="text"]+span:after {
+    content: "\21AA";
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* 后盾人-溢出控制、多行溢出 */
+.overflow{
+    /* 宽度em是相对于整个页面，而%相对于container 都是百分比意思 */
+    width: 50%; 
+    border: 1px dotted;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.MultiOverflow{
+    width: 50%;
+    border: 1px dotted;
+    overflow: hidden;
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+/* 表格溢出控制需要为 table 标签定义 table-layout: fixed; 其他同overflow */
+
