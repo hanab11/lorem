@@ -3,7 +3,18 @@ console.log("hello".charAt(0));
 console.log("hello world".replace("hello", "goodbye"));
 console.log("hello".toUpperCase());
 
-// var全局，let局部
+var web1 = "";
+
+function hd() {
+    var web = "houdunren.com";
+    web1 = "hanabi.com";
+    console.log(web);
+}
+hd();
+// console.log(web); // 函数内部声明的变量只能内部使用
+console.log(web1); // web1为全局变量，没有块作用域概念（ES6新增）
+
+// 非函数内部声明的var会影响全局，let/const只影响局部（块作用域 for while...）
 var name = "lee";
 let age = 15;
 const Pi = 3.1415926;
@@ -12,6 +23,16 @@ console.log(age);
 console.log(age++);
 console.log(Pi);
 // console.log(Pi = 3.14);
+
+// cosnt 对象（引用类型） 内部的值port 可以被修改
+const INFO = {
+    url: 'hanabi.com',
+    port: '8080'
+};
+INFO.port = '443';
+console.log(INFO);
+Object.freeze(INFO);
+// INFO.port = '443'; //变量被冻结后不可修改const
 
 // 字符串加法
 var x = "3" + 4 + 5;
@@ -120,4 +141,6 @@ function makeAdder(a) {
     };
 }
 var func = makeAdder(4);
+console.log(func(5));
+4);
 console.log(func(5));
