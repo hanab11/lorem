@@ -90,6 +90,16 @@ for (let i = 1; i <= 5; i++) {
     }
     document.write("<br/>");
 }
+// 再打一遍，基本逻辑 先空格，再星星，层层打印，数量关系理清楚
+for (let i = 1; i <= 5; i++) {
+    for (let block = 5 - i; block > 0; block--) {
+        document.write('&ensp;');
+    }
+    for (let star = 2 * i - 1; star > 0; star--) {
+        document.write('*');
+    }
+    document.write('<br/>');
+}
 
 // case可合用，break跳出，continue跳到循环起始/标签label处继续执行，continue适合逐个处理文本（大学做过）
 switch (name) {
