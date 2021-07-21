@@ -39,10 +39,27 @@ var x = "3" + 4 + 5;
 var y = 3 + 4 + "5";
 console.log(x);
 console.log(y);
-console.log(123 == "123");
+console.log(123 == "123"); // 有强制类型转换
 console.log(123 === "123");
 
-// 循环
+// 与&优先于或| 
+console.log(true || false && false);
+
+// 短路特性：前面为真就不判断后者，prompt是个输入框：没有输入视为false
+let sex = prompt("你的性别是？") || "保密";
+console.log(sex);
+
+let opt = {
+    url: ''
+};
+
+function getUrl(opt) {
+    opt.url = '默认地址';
+}
+opt.url || getUrl(opt);
+console.log(opt.url);
+
+// 控制循环
 if (name == "lee1") {
     console.log(name);
 } else if (age == 18) {
@@ -59,12 +76,25 @@ while (age < 18)
 
 for (let i = 0; i < 3; i++) {
     console.log(age++);
-    // age++ === {print age; age=age+1;}
-    // ++age === {age=age+1; print age;}
+    // age++ === {print age; age=age+1;} 称后置操作
+    // ++age === {age=age+1; print age;} 称前置操作
 }
 
+// 打印杨辉三角：要注意每行 *前空格的个数，document.write是js对html的写方法
+for (let i = 1; i <= 5; i++) {
+    for (let n = 5 - i; n > 0; n--) {
+        document.write('&nbsp;');
+    }
+    for (let m = i * 2 - 1; m > 0; m--) {
+        document.write('*');
+    }
+    document.write("<br/>");
+}
+
+// case可合用，break跳出，continue跳到循环起始/标签label处继续执行，continue适合逐个处理文本（大学做过）
 switch (name) {
     case "lee":
+    case "lee1":
         console.log("lee");
         break;
     case "zhou":
@@ -104,8 +134,13 @@ a.pop();
 for (let i = 0; i < a.length; i++) {
     console.log(a[i]);
 }
+// for/in 效果上等同于前者 获得索引index，再遍历
 for (let i in a) {
     console.log(a[i]);
+}
+// for/of 与 /in不同，它只能使用CONST类型迭代器遍历可迭代的数据结构，且直接取值。
+for (const iterator of a) {
+    console.log(iterator);
 }
 
 b.reverse();
@@ -141,6 +176,4 @@ function makeAdder(a) {
     };
 }
 var func = makeAdder(4);
-console.log(func(5));
-4);
 console.log(func(5));
