@@ -1,3 +1,45 @@
+/*
+   以下为针对HTML页面操作 HTML、CSS、属性attribute
+*/
+
+// 提前设置缺省 default类在CSS里
+
+// text...只能更改文本，inner包含文本及其标签。
+document.querySelector("form label").textContent = "Good Name";
+
+document.querySelector("#HTMLbtn").addEventListener("click", function() {
+    document.querySelector("form label").innerHTML = "<em>Good Luck Name</em>";
+});
+
+// 以下2句可以直接用toggle在btn中表达
+// document.querySelector("form label").classList.add("default");
+// document.querySelector("form label").classList.remove("default");
+document.querySelector("#CSSbtn").addEventListener("click", function() {
+    document.querySelector("form label").classList.toggle("default");
+});
+
+// attribute对属性进行增删改操作
+document.querySelector("th").setAttribute("class", "default");
+
+document.querySelector("#CLASSbtn").addEventListener("click", function() {
+    document.querySelector("form label").attributes.class.value = "attribute";
+});
+document.querySelector("#CLASSbtn").addEventListener("mouseleave", function() {
+    document.querySelector("form label").classList.remove("attribute");
+});
+
+
+
+
+
+
+
+
+
+
+/*
+    以下为控制台显示内容
+ */
 console.log("hello".length);
 console.log("hello".charAt(0));
 console.log("hello world".replace("hello", "goodbye"));
@@ -71,8 +113,7 @@ if (name == "lee1") {
 do {
     age++;
     console.log(age, age >= 18 ? "adult" : "child");
-}
-while (age < 18)
+} while (age < 18)
 
 for (let i = 0; i < 3; i++) {
     console.log(age++);

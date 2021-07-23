@@ -1,165 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>HTML Beginner</title>
-    </head>
-    <body>
-        <!-- #heading -->
-        <h1>Head one</h1>
-        <h2>Head two</h2>
-        <h3>Head three</h3>
-        <h4>Head four</h4>
-        <h5>Head five</h5>
-        <h6>Head six</h6>
 
-        <!-- . 对class类定位，# 对id定位 -->
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Beginner</title>
+    <link rel="stylesheet" href="./css/default.css">
 
-        <!-- anchorpoint -->
-        <p><a href="#comment">查看大家的评论~</a></p>
+</head>
 
-        <!-- #paragraph -->
-        <p><strong>Lorem</strong> <em>ipsum</em> dolor sit amet consectetur, adipisicing elit. Dolores, dignissimos.</p>
-        <p><a href="https://github.com/" target="_blank" title="GitHub">Lorem</a> ipsum dolor sit amet, consectetur adipisicing elit. Quam, architecto sequi. Nulla mollitia esse repudiandae, animi commodi debitis explicabo ab asperiores laboriosam praesentium suscipit deleniti, ad facilis aliquam omnis non!</p>
+<body>
+    <!-- #heading -->
+    <h1>Head one</h1>
+    <h2>Head two</h2>
+    <h3>Head three</h3>
+    <h4>Head four</h4>
+    <h5>Head five</h5>
+    <h6>Head six</h6>
 
-        <!-- #list -->
-        <ul>
-            <li>list one</li>
-            <li>list two</li>
-            <li>list three</li>
-            <li>list four</li>
-            <li>list five</li>
-            <li>list six</li>
-        </ul>
+    <!-- . 对class类定位，# 对id定位 -->
 
-        <ol>
-            <li>list one</li>
-            <li>list two</li>
-            <li>list three</li>
-            <li>list four</li>
-            <li>list five</li>
-            <li>list six</li>
-        </ol>
+    <!-- anchorpoint -->
+    <p><a href="#comment">查看大家的评论~</a></p>
 
-        <!-- #table -->
-        <table>
-            <thead>
-                <tr>
-                    <td>First Name</td>
-                    <td>Last Name</td>
-                    <td>Age</td>
-                    <td>Email</td>
-                </tr>
-            </thead>
+    <!-- #paragraph -->
+    <p><strong>Lorem</strong> <em>ipsum</em> dolor sit amet consectetur, adipisicing elit. Dolores, dignissimos.</p>
+    <p><a href="https://github.com/" target="_blank" title="GitHub">Lorem</a> ipsum dolor sit amet, consectetur adipisicing elit. Quam, architecto sequi. Nulla mollitia esse repudiandae, animi commodi debitis explicabo ab asperiores laboriosam praesentium
+        suscipit deleniti, ad facilis aliquam omnis non!</p>
 
-            <tbody>
-                <tr>
-                    <td>Steve</td>
-                    <td>Jobs</td>
-                    <td>99</td>
-                    <td>sxakln@mail.com</td>
-                </tr>
-                <tr>
-                    <td>Steve</td>
-                    <td>Jobs</td>
-                    <td>99</td>
-                    <td>sxakln@mail.com</td>
-                </tr>
-                <tr>
-                    <td>Steve</td>
-                    <td>Jobs</td>
-                    <td>99</td>
-                    <td>sxakln@mail.com</td>
-                </tr>
-            </tbody>
-        </table>
+    <!-- #list -->
+    <ul>
+        <li>list one</li>
+        <li>list two</li>
+        <li>list three</li>
+        <li>list four</li>
+        <li>list five</li>
+        <li>list six</li>
+    </ul>
 
-        <!-- #table merge 2行2列、3行2列 -->
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>标题</th>
-                    <th>时间</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="2">合并单元格列*2，2021-07-15 17:53:58</td>
-                </tr>
-            </tbody>
-        </table>
-        <!-- #注意合并2行后，合并行与第二行视为同一个tr 行里 -->
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>标题</th>
-                    <th>时间</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="2">合并单元格行*2，</td>
-                    <td>2021-07-15 18:00:16</td> 
-                </tr>
-                <tr>
-                    <td>2021-07-15 18:04:43</td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <br>
-        <hr>
+    <ol>
+        <li>list one</li>
+        <li>list two</li>
+        <li>list three</li>
+        <li>list four</li>
+        <li>list five</li>
+        <li>list six</li>
+    </ol>
 
-        <!-- #form POST用户数据到js执行，数据需要类型、名称、值 -->
-        <form action="form.js" method="POST">
-            <div>
-                <label>First Name</label>
-                <input type="text" name="firstname" placeholder="Plase Enter First Name">
-            </div>
-            <div>
-                <label>Last Name</label>
-                <input type="text" name="lastname" placeholder="Plase Enter Last Name">
-            </div>
-            <div>
-                <label>Email</label>
-                <input type="email" name="email" placeholder="Plase Enter Email">
-            </div>
-            <input type="submit" name="submit" value="Submit">
-        </form>
+    <!-- #table -->
+    <table>
+        <thead>
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Age</td>
+                <td>Email</td>
+            </tr>
+        </thead>
 
-        <br>
-        <button>only a button</button>
-        <br>
-        <br>
+        <tbody>
+            <tr>
+                <td>Steve</td>
+                <td>Jobs</td>
+                <td>99</td>
+                <td>sxakln@mail.com</td>
+            </tr>
+            <tr>
+                <td>Steve</td>
+                <td>Jobs</td>
+                <td>99</td>
+                <td>sxakln@mail.com</td>
+            </tr>
+            <tr>
+                <td>Steve</td>
+                <td>Jobs</td>
+                <td>99</td>
+                <td>sxakln@mail.com</td>
+            </tr>
+        </tbody>
+    </table>
 
-        <!-- progress -->
-        <progress style="width: 98vw;" value="25" max="100">图片渲染度25%</progress>
-        <p>图片渲染度25%</p>
+    <!-- #table merge 2行2列、3行2列 -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>时间</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">合并单元格列*2，2021-07-15 17:53:58</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- #注意合并2行后，合并行与第二行视为同一个tr 行里 -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>时间</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">合并单元格行*2，</td>
+                <td>2021-07-15 18:00:16</td>
+            </tr>
+            <tr>
+                <td>2021-07-15 18:04:43</td>
+            </tr>
+        </tbody>
+    </table>
 
-        <!-- #img -->
-        <img style="width: 98vw;" src="img/pic.jpg" alt="This is a img tag refresh again">
+    <br>
+    <hr>
 
-        <!-- #quotation -->
-        <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae repellat explicabo ipsam, perferendis amet.</blockquote>
+    <!-- #form POST用户数据到js执行，数据需要类型、名称、值 -->
+    <form action="form.js" method="POST">
+        <div>
+            <label>First Name</label>
+            <input type="text" name="firstname" placeholder="Plase Enter First Name">
+        </div>
+        <div>
+            <label>Last Name</label>
+            <input type="text" name="lastname" placeholder="Plase Enter Last Name">
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Plase Enter Email">
+        </div>
+        <input type="submit" name="submit" value="Submit">
+    </form>
 
-        <p>Must be the championship on <abbr title="The International DOTA2 Championships">Ti10</abbr>.</p>
-        <p><cite>Must be the championship on <abbr title="The International DOTA2 Championships">Ti10</abbr>.</cite> By hanab11</p>
-        
-        <blockquote><cite>Must be the championship on <abbr title="The International DOTA2 Championships">Ti10</abbr>.</cite> By hanab11</blockquote>
+    <br>
+    <button id="HTMLbtn">HTML button</button>
+    <button id="CSSbtn">CSS button</button>
+    <button id="CLASSbtn">END CLASS button</button>
+    <br>
+    <br>
 
-        <!-- mailto -->
-        <p><a href="mailto:sxakln2020@163.com">邮件联系我</a></p>
+    <!-- progress -->
+    <progress style="width: 98vw;" value="25" max="100">图片渲染度25%</progress>
+    <p>图片渲染度25%</p>
 
-        <!--  -->
-        <!--  -->
-        <!--  -->
+    <!-- #img -->
+    <img style="width: 98vw;" src="img/pic.jpg" alt="This is a img tag refresh again">
+
+    <!-- #quotation -->
+    <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae repellat explicabo ipsam, perferendis amet.</blockquote>
+
+    <p>Must be the championship on <abbr title="The International DOTA2 Championships">Ti10</abbr>.</p>
+    <p><cite>Must be the championship on <abbr title="The International DOTA2 Championships">Ti10</abbr>.</cite> By hanab11</p>
+
+    <blockquote><cite>Must be the championship on <abbr title="The International DOTA2 Championships">Ti10</abbr>.</cite> By hanab11</blockquote>
+
+    <!-- mailto -->
+    <p><a href="mailto:sxakln2020@163.com">邮件联系我</a></p>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
 
 
-        <!-- 打开页面使用console -->
-        <script src="console.js"></script>
+    <!-- 打开页面右键控制台console -->
+    <script src="console.js"></script>
 
-        <div style="margin-top: 1000px;"></div>
-        
-        <div id="comment" style="background-color: yellowgreen;">临时评论区</div>
-    </body>
+    <div style="margin-top: 1000px;"></div>
+
+    <div id="comment" style="background-color: yellowgreen;">临时评论区</div>
+</body>
+
 </html>
