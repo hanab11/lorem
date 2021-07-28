@@ -1,5 +1,5 @@
 /*
-   以下为针对HTML页面操作 HTML、CSS、属性attribute
+   以下是通过DOM对HTML页面 操作 HTML、CSS、属性attribute
 */
 
 // 提前设置缺省 default类在CSS里
@@ -29,6 +29,128 @@ document.querySelector("#CLASSbtn").addEventListener("mouseleave", function() {
 });
 
 
+/*
+2021年7月28日 23:27:22之前的内容 ////////////////////////////////////////////////////////////////
+*/
+
+/*
+    以下为控制台显示内容 "" ''引号都可以
+ */
+
+console.error('this is an error');
+console.warn('this is a warn');
+
+// string number boolean null undefined
+
+const str = 'Lee';
+const num = 26;
+const rating = 4.5;
+const isCool = true;
+const xxx = null;
+const yyy = undefined;
+let zzz;
+
+console.log(typeof str);
+console.log(typeof num);
+console.log(typeof rating);
+console.log(typeof isCool);
+console.log(typeof xxx);
+console.log(typeof yyy);
+console.log(typeof zzz);
+
+// string拼接和ES6模板
+console.log('my name is ' + str + ' and i am ' + num);
+const hello = `my name is ${str} and i am ${num}`;
+console.log(hello);
+
+// string分段并以数组形式保存
+let arrrr = []; // const arrrr = new Array();
+arrrr = hello.split(' ');
+console.log(Array.isArray(arrrr) ? arrrr : false);
+console.log(arrrr.indexOf('26'));
+
+// 对象=键值对 键:值
+const person = {
+    name: 'xiaohe',
+    age: '30',
+    hobbies: ['music', 'movies', 'sports'],
+    address: {
+        street: '50 main street',
+        city: 'shanghai',
+        state: 'CN'
+    }
+}
+console.log(person.hobbies[1]);
+console.log(person.address.city);
+person.eamil = 'xiaohe@163.com'; //赋新值就是加对象的属性
+console.log(person);
+
+// 对象数组
+const todos = [{
+    id: 0,
+    text: 'work',
+    isCompleted: true
+}, {
+    id: 1,
+    text: 'meet',
+    isCompleted: false
+}, {
+    id: 2,
+    text: 'dinnner',
+    isCompleted: false
+}];
+
+console.log(todos[1].text);
+
+// JSON
+const todoJSON = JSON.stringify(todos);
+console.log(todoJSON);
+
+for (let i = 0; i < todos.length; i++) {
+    console.log(todos[i].text);
+}
+for (let i in todos) {
+    console.log(todos[i].text);
+}
+// 注意for/in 和 for/of的区别，最下面也有举例
+// 打印出JSON是字符串
+// for (let i = 0; i < todoJSON.length; i++) {
+//     console.log(todoJSON[i]);
+// }
+
+// 函数式编程 forEach map filter 选择后还可链接多种方法
+todos.forEach(function(iterator) {
+    console.log(iterator.text);
+});
+
+const todoText = todos.map(function(iterator) {
+    return iterator.text;
+}); // 闭包
+console.log(todoText);
+
+const todoCompleted = todos.filter(function(iterator) {
+    return iterator.isCompleted === false;
+});
+console.log(todoCompleted);
+
+const todoCompletedText =
+    todos.filter(function(iterator) {
+        return iterator.isCompleted === false;
+    }).map(function(iterator) {
+        return iterator.text;
+    })
+console.log(todoCompletedText);
+
+// 浏览到条件语句
+
+
+
+
+
+
+
+
+
 
 
 
@@ -38,8 +160,9 @@ document.querySelector("#CLASSbtn").addEventListener("mouseleave", function() {
 
 
 /*
-    以下为控制台显示内容
- */
+2021年7月21日 22:42:32之前的内容 //////////////////////////////////////////////////////////////
+*/
+
 console.log("hello".length);
 console.log("hello".charAt(0));
 console.log("hello world".replace("hello", "goodbye"));
