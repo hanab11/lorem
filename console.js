@@ -1,5 +1,5 @@
 /*
-   以下是通过DOM对HTML页面 操作 HTML、CSS、属性attribute
+   （教程A）以下是通过DOM对HTML页面 操作 HTML、CSS、属性attribute
 */
 
 // 提前设置缺省 default类在CSS里
@@ -30,13 +30,11 @@ document.querySelector("#CLASSbtn").addEventListener("mouseleave", function() {
 
 
 /*
-2021年7月28日 23:27:22之前的内容 ////////////////////////////////////////////////////////////////
+2021年7月28日 23:27:22之前的内容（教程B） ////////////////////////////////////////////////////////////////
 */
-
 /*
     以下为控制台显示内容 "" ''引号都可以
  */
-
 console.error('this is an error');
 console.warn('this is a warn');
 
@@ -141,7 +139,81 @@ const todoCompletedText =
     })
 console.log(todoCompletedText);
 
-// 浏览到条件语句
+
+/*
+2021年7月29日 23:37:34之前的内容（教程B） ////////////////////////////////////////////////////////////////
+*/
+// 函数
+function addNums(num1, num2) {
+    return num1 + num2;
+}
+console.log(addNums(5, 5));
+// 箭头函数 不写大括号的同时不写return
+const addNumss = (num1, num2) => num1 + num2;
+console.log(addNumss(3, 6));
+// 箭头函数 可以省写function，用一行解决问题 （等同122~124行）
+todos.forEach((iterator) => console.log(iterator.text));
+
+//OOP编程基础 构造函数首字母大写，方法的位置由自己决定
+function Person(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+
+    this.getFullName1 = () => `${this.firstName} ${this.lastName}`;
+    this.why2WritePrototype = () => '对象里会有它';
+}
+// 原形不在构造函数里写 结果就是方法不在对象中 而在对象的原形中 不占内存?
+Person.prototype.getFullName2 = () => `${this.firstName} ${this.lastName}`;
+Person.prototype.getFullName3 = function() {
+    return `${this.firstName} ${this.lastName}`;
+}
+Person.prototype.getBirthYear = function() {
+    return this.dob.getFullYear();
+}
+
+// 对象当然可以使用class来定义且更有条理，子类里只放属性，方法全部放在原形里
+class PersonClass {
+    constructor(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+    }
+    getBirthYear() {
+        return this.dob.getFullYear();
+    }
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+
+    // 显然类方法并不支持箭头函数（区分 函数、方法）
+}
+
+// 初始化
+const person1 = new Person('John', 'Snow', '9-9-1968');
+const person2 = new Person('Mary', 'Smith', '10-18-1968');
+const person3 = new PersonClass('Lee', 'Nin', '11-8-1995');
+
+console.log(person1);
+console.log(person3);
+console.log(person1.getFullName1()); //1、3相同
+console.log(person1.getFullName2()); //不要使用箭头函数定义原形，否则this指向undefined
+console.log(person1.getFullName3());
+console.log(person2.getBirthYear());
+
+
+/*
+2021年7月30日 23:37:34之前的内容（教程B） ////////////////////////////////////////////////////////////////
+*/
+// ！DOM！
+
+
+
+
+
+
+
+
 
 
 
@@ -160,9 +232,8 @@ console.log(todoCompletedText);
 
 
 /*
-2021年7月21日 22:42:32之前的内容 //////////////////////////////////////////////////////////////
+2021年7月21日 22:42:32之前的内容（教程A） //////////////////////////////////////////////////////////////
 */
-
 console.log("hello".length);
 console.log("hello".charAt(0));
 console.log("hello world".replace("hello", "goodbye"));
