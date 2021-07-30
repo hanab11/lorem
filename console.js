@@ -2,13 +2,13 @@
    （教程A）以下是通过DOM对HTML页面 操作 HTML、CSS、属性attribute
 */
 
+// queryxxxx即JQuery的方法之一
 // 提前设置缺省 default类在CSS里
-
-// text...只能更改文本，inner包含文本及其标签。
-document.querySelector("form label").textContent = "Good Name";
+// textContent只能更改文本，inner包含文本及其标签。
+document.querySelector("form label").textContent = "Good Name:";
 
 document.querySelector("#HTMLbtn").addEventListener("click", function() {
-    document.querySelector("form label").innerHTML = "<em>Good Luck Name</em>";
+    document.querySelector("form label").innerHTML = "<em>Good Luck Name:</em>";
 });
 
 // 以下2句可以直接用toggle在btn中表达
@@ -21,10 +21,12 @@ document.querySelector("#CSSbtn").addEventListener("click", function() {
 // attribute对属性进行增删改操作
 document.querySelector("th").setAttribute("class", "default");
 
-document.querySelector("#CLASSbtn").addEventListener("click", function() {
+const classbtn = document.querySelector('#CLASSbtn');
+
+classbtn.addEventListener("click", function() {
     document.querySelector("form label").attributes.class.value = "attribute";
 });
-document.querySelector("#CLASSbtn").addEventListener("mouseleave", function() {
+classbtn.addEventListener("mouseleave", function() {
     document.querySelector("form label").classList.remove("attribute");
 });
 
@@ -205,30 +207,66 @@ console.log(person2.getBirthYear());
 /*
 2021年7月30日 23:37:34之前的内容（教程B） ////////////////////////////////////////////////////////////////
 */
-// ！DOM！
+// DOM
+// 单个element
+console.log(window); //window为默认对象 DOM就在其中
+console.log(document.getElementById('myForm')); //get中最常用的
+console.log(document.querySelector('#myForm')); //很常用
+// 多个element 获取到collection集合
+console.log(document.getElementsByClassName('items'));
+console.log(document.getElementsByTagName('label'));
+console.log(document.querySelectorAll('.item'));
 
+const ul = document.querySelector('.items');
+// ul.remove();
+ul.lastElementChild.remove();
+ul.firstElementChild.textContent = 'hello';
+ul.children[1].innerHTML = '<b>world</b>'
 
+// 需要做多次操作时 使用变量代替更简洁
+const btn = document.querySelector('.btn');
+btn.style.background = 'yellow';
 
+btn.addEventListener('click', (x) => {
+    // 取消默认行为，会印象后续操作
+    // x.preventDefault();
 
+    document.querySelector('#myForm').style.background = '#ccc';
+    document.querySelector('body').style.background = '#F4F4F4';
+})
 
+// 注意 变量拿到的输入内容不止于字符串，获得字符串需要用value
+const myForm = document.querySelector('#myForm');
+const fNameInput = document.querySelector('#fName');
+const lNameInput = document.querySelector('#lName');
+const emailInput = document.querySelector('#email');
+const msg = document.querySelector('.msg');
+const userList = document.querySelector('.users');
 
+myForm.addEventListener('submit', onSubmit);
 
+function onSubmit(x) {
+    x.preventDefault();
 
+    if (fNameInput.value === '' || lNameInput.value === '' || emailInput.value === '') {
+        msg.classList.add('error');
+        msg.innerHTML = '<b>please enter all fields</b>'; //标记：重复点击只显示一次 可能是submit默认
 
+        setTimeout(() => msg.remove(), 3000);
+    } else {
+        const li = document.createElement('li');
+        li.appendChild( //append传入的是对象，要传字符串要先创textNode
+            document.createTextNode(`${fNameInput.value} ${lNameInput.value} : ${emailInput.value}`)
+        );
 
+        userList.appendChild(li);
 
-
-
-
-
-
-
-
-
-
-
-
-
+        //clear
+        fNameInput.value = '';
+        lNameInput.value = '';
+        emailInput.value = '';
+    }
+}
 
 
 /*

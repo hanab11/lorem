@@ -116,27 +116,42 @@
     <hr>
 
     <!-- #form POST用户数据到js执行，数据需要类型、名称、值 -->
-    <form action="form.js" method="POST">
+    <form id="myForm">
+        <div class="msg"></div>
         <div>
-            <label>First Name</label>
-            <input type="text" name="firstname" placeholder="Plase Enter First Name">
+            <!-- label的for属性和输入框id对应的 否则读不到数据！ -->
+            <label for="fName">First Name:</label>
+            <br>
+            <input type="text" id="fName" placeholder="Plase Enter First Name">
         </div>
         <div>
-            <label>Last Name</label>
-            <input type="text" name="lastname" placeholder="Plase Enter Last Name">
+            <label for="lName">Last Name:</label>
+            <br>
+            <input type="text" id="lName" placeholder="Plase Enter Last Name">
         </div>
         <div>
-            <label>Email</label>
-            <input type="email" name="email" placeholder="Plase Enter Email">
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" placeholder="Plase Enter Email">
         </div>
-        <input type="submit" name="submit" value="Submit">
+
+        <input class="btn" type="submit" value="Submit">
     </form>
 
     <br>
     <button id="HTMLbtn">HTML button</button>
     <button id="CSSbtn">CSS button</button>
-    <button id="CLASSbtn">END CLASS button</button>
+    <button id="CLASSbtn">CLASS button</button>
     <br>
+
+    <ul class="users"></ul>
+
+    <ul class="items">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+    </ul>
+
     <br>
 
     <!-- progress -->
@@ -168,6 +183,7 @@
     <div style="margin-top: 1000px;"></div>
 
     <div id="comment" style="background-color: yellowgreen;">临时评论区</div>
+
 </body>
 
 </html>
