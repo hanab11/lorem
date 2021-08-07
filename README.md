@@ -1,5 +1,7 @@
 # lorem
-练习用仓库；
+练习用仓库；   
+[前端MDN-万维网](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/How_the_Web_works)   
+
 
 本地修改，模拟解决冲突111
 Github修改，模拟解决冲突222
