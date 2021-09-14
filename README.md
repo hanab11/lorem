@@ -2,12 +2,12 @@
 练习用仓库；   
 [前端MDN-万维网](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/How_the_Web_works)   
 
-## TodoList-9/13      
+## TodoList-9/14      
 1.MDN阅读      
 2.JS文档阅读-快速了解各部分功能（从基本类型开始）   
 3.VUE入门-了解JS哪些功能被VUE封装，如何使用   
-4.VUE项目实践-模拟器   
-
+4.VUE实践-模拟器项目   
+5.各种feature   
 
 
 ## gitMerge
