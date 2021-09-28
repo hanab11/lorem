@@ -2,7 +2,7 @@
 练习用仓库；   
 [前端MDN-万维网](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/How_the_Web_works)   
 
-## TodoList-9/27~10/1     
+## TodoList-9/28~10/1     
 0.时间效率       
 1.MDN阅读✔      
 2.JS文档阅读-快速了解各部分功能✔   
