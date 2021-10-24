@@ -2,15 +2,14 @@
 练习用仓库；   
 [前端MDN-万维网](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/How_the_Web_works)   
 
-## TodoList-10/23坚持住，信任     
+## TodoList-10/24坚持住，信任     
 0.TI后早晚作息+✔       
 1.MDN阅读✔      
 2.JS文档阅读-快速了解各部分功能✔   
 3.VUE入门-了解JS哪些功能被VUE封装，如何使用✔   
 4.VUE实践-模拟器项目等...      
          
-777.日课里没有保底的game如smn、fate、kg、ys全部转入不活跃状态，日常dl、que控制好时间   
-
+777.全部转入不活跃状态，日常控制好时间      
 
 ## gitMerge
 本地修改，模拟解决冲突111
