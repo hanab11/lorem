@@ -1,8 +1,8 @@
 # lorem
-练习用仓库；   
+练习+打卡用仓库；   
 [前端MDN-万维网](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/How_the_Web_works)   
 
-## TodoList-10/31坚持住，信任     
+## TodoList-11/1坚持住，信任     
 0.特殊时期果断，迅猛✔       
 1.MDN阅读✔      
 2.JS文档阅读-快速了解各部分功能✔   
