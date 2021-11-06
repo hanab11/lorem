@@ -2,8 +2,8 @@
 练习+打卡用仓库；   
 [前端MDN-万维网](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/How_the_Web_works)   
 
-## TodoList-11/6坚持住，信任     
-0.特殊时期果断，迅猛✔       
+## TodoList-11/6     
+0.果断，迅猛✔       
 1.MDN阅读✔      
 2.JS文档阅读-快速了解各部分功能✔   
 3.VUE入门-了解JS哪些功能被VUE封装，如何使用✔   
