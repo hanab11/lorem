@@ -2,7 +2,7 @@
 练习+打卡用仓库；   
 [前端MDN-万维网](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/How_the_Web_works)   
 
-## TodoList-11/12     
+## TodoList-11/14     
 0.果断，迅猛✔       
 1.MDN阅读✔      
 2.JS文档阅读-快速了解各部分功能✔   
@@ -22,8 +22,9 @@ Github修改，模拟解决冲突222
 
 ## vscode+git push报错 SSL_read,,errno 10053
 >#### 解决办法：
->其一git config http.sslVerify "false"
->其二git config --global --unset http.proxy
+>其一git config http.sslVerify "false"     
+>其二git config --global --unset http.proxy     
+>其三git config --global --unset https.proxy     
 
 
 
