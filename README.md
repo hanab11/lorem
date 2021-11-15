@@ -2,7 +2,7 @@
 练习+打卡用仓库；   
 [前端MDN-万维网](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/How_the_Web_works)   
 
-## TodoList-11/14     
+## TodoList-11/15     
 0.果断，迅猛✔       
 1.MDN阅读✔      
 2.JS文档阅读-快速了解各部分功能✔   
@@ -23,9 +23,16 @@ Github修改，模拟解决冲突222
 ## vscode+git push报错 SSL_read,,errno 10053
 >#### 解决办法：
 >其一git config http.sslVerify "false"     
->其二git config --global --unset http.proxy     
->其三git config --global --unset https.proxy     
-
+>其二git config --global --unset http.proxy      
+     
+## vscode+git push报错 未能身份验证（密码出错）     
+>git上的错误，vscode并不会完全显示，需要使用git bash查看     
+>查阅许久得知GitHub本地登录改用token了(https://blog.csdn.net/weixin_41010198/article/details/119698015)     
+>具体操作方法如下：     
+>其一git config --system --unset credential.helper（清空凭据）     
+>其二token（作为密码）     
+>其三git push origin（在git bash中输入账号和token）     
+>最后git config --global credential.helper store(永久存储，不再要求密码登录)     
 
 
 ##
