@@ -2,14 +2,8 @@
 练习+打卡用仓库；   
 [前端MDN-万维网](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/How_the_Web_works)   
 
-## TodoList-9/19    
-0.果断，迅猛✔       
-1.MDN阅读✔      
-2.JS文档阅读-快速了解各部分功能✔   
-3.VUE入门-了解JS哪些功能被VUE封装，如何使用✔   
-4.VUE实践-模拟器项目等...      
-         
-777.全部转入不活跃状态，日常控制好时间      
+## 遇到的问题及解决办法    
+
 
 ## gitMerge     
 本地修改，模拟解决冲突111
